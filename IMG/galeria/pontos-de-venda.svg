@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Parceiros comerciais">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#57A7DC"/><stop offset="1" stop-color="#2f7fb8"/></linearGradient></defs>
+<rect width="800" height="600" fill="url(#g)"/>
+<circle cx="680" cy="120" r="150" fill="#fff" opacity="0.09"/>
+<circle cx="120" cy="500" r="120" fill="#fff" opacity="0.07"/>
+<g transform="translate(400,250)" opacity="0.95"><rect x="-170" y="-40" width="340" height="150" rx="10" fill="#FFFCDD"/>
+<path d="M-190,-40 L-150,-110 L150,-110 L190,-40 Z" fill="#57A7DC" stroke="#FFFCDD" stroke-width="6"/>
+<rect x="-60" y="10" width="120" height="100" rx="6" fill="#dfeaf3"/>
+<rect x="-150" y="0" width="60" height="50" rx="6" fill="#dfeaf3"/>
+<rect x="90" y="0" width="60" height="50" rx="6" fill="#dfeaf3"/></g>
+<rect x="0" y="470" width="800" height="130" fill="#0F4C81" opacity="0.55"/>
+<text x="48" y="522" font-family="Verdana,DejaVu Sans,sans-serif" font-size="30" font-weight="bold" fill="#FFFCDD">Parceiros comerciais</text>
+<text x="48" y="556" font-family="Verdana,DejaVu Sans,sans-serif" font-size="17" fill="#dff0fb">Mercearias, varejistas e comerciantes da região</text>
+</svg>
