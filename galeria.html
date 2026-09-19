@@ -1,386 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galeria — GR Alimentos</title>
 
-  <title>Galeria — GR Alimentos</title>
+    <meta
+      name="description"
+      content="Imagens da estrutura da GR Alimentos: armazenamento refrigerado, estoque de pronta entrega, frota e pontos de venda atendidos."
+    />
 
-  <meta
-    name="description"
-    content="Imagens da estrutura da GR Alimentos: armazenamento refrigerado, estoque de pronta entrega, frota e pontos de venda atendidos."
-  >
+    <meta name="theme-color" content="#57a7dc" />
 
-  <meta name="theme-color" content="#57a7dc">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <a class="pular-para-conteudo" href="#conteudo"> Pular para o conteúdo </a>
 
-<body>
+    <!-- ===================== CABEÇALHO ===================== -->
 
-  <a class="pular-para-conteudo" href="#conteudo">
-    Pular para o conteúdo
-  </a>
+    <header class="cabecalho">
+      <div class="container cabecalho-interno">
+        <a class="logo" href="index.html">
+          <img
+            src="IMG/logo gr.png"
+            alt="GR Alimentos"
+            width="46"
+            height="54"
+          />
 
-  <!-- ===================== CABEÇALHO ===================== -->
+          <span class="logo-texto">
+            <span class="logo-nome">GR Alimentos</span>
+            <span class="logo-sub">Distribuidora</span>
+          </span>
+        </a>
 
-  <header class="cabecalho">
-    <div class="container cabecalho-interno">
-
-      <a class="logo" href="index.html">
-        <img
-          src="IMG/logo gr.png"
-          alt="GR Alimentos"
-          width="46"
-          height="54"
-        >
-
-        <span class="logo-texto">
-          <span class="logo-nome">GR Alimentos</span>
-          <span class="logo-sub">Distribuidora</span>
-        </span>
-      </a>
-
-      <nav
-        class="nav"
-        id="nav-principal"
-        aria-label="Navegação principal"
-      >
-        <a href="index.html">Início</a>
-        <a href="institucional.html">A empresa</a>
-        <a href="catalogo.html">Catálogo</a>
-        <a href="galeria.html" aria-current="page">Galeria</a>
-        <a href="contato.html">Contato</a>
-      </nav>
-
-      <div class="cabecalho-acoes">
-
-        <button
-          type="button"
-          class="carrinho-botao"
-          aria-label="Abrir pedido"
-        >
-          <svg
-            class="icone"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <path d="M7 18a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 18Zm10 0a2 2 0 1 0 .001 4.001A2 2 0 0 0 17 18ZM6.2 6h14.6l-2.3 8.2a2 2 0 0 1-1.9 1.4H8.6a2 2 0 0 1-1.9-1.4L4.1 3.7H1.5v-2h4.1L6.2 6Z"/>
-          </svg>
-
-          <span>Pedido</span>
-          <span class="carrinho-contador">0</span>
-        </button>
-
-        <button
-          type="button"
-          class="menu-toggle"
-          id="menu-toggle"
-          aria-expanded="false"
-          aria-controls="nav-principal"
-          aria-label="Abrir menu"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-      </div>
-
-    </div>
-  </header>
-
-
-  <!-- ===================== CONTEÚDO ===================== -->
-
-  <main id="conteudo">
-
-    <!-- HERO DA GALERIA -->
-
-    <section class="hero">
-      <div class="container">
-
-        <p class="migalhas">
+        <nav class="nav" id="nav-principal" aria-label="Navegação principal">
           <a href="index.html">Início</a>
-          &rsaquo;
-          Galeria
-        </p>
+          <a href="institucional.html">A empresa</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="galeria.html" aria-current="page">Galeria</a>
+          <a href="contato.html">Contato</a>
+        </nav>
 
-        <h1>Galeria</h1>
+        <div class="cabecalho-acoes">
+          <button
+            type="button"
+            class="carrinho-botao"
+            aria-label="Abrir pedido"
+          >
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M7 18a2 2 0 1 0 .001 4.001A2 2 0 0 0 7 18Zm10 0a2 2 0 1 0 .001 4.001A2 2 0 0 0 17 18ZM6.2 6h14.6l-2.3 8.2a2 2 0 0 1-1.9 1.4H8.6a2 2 0 0 1-1.9-1.4L4.1 3.7H1.5v-2h4.1L6.2 6Z"
+              />
+            </svg>
 
-        <p class="hero-texto">
-          Conheça um pouco da estrutura da GR Alimentos,
-          desde o armazenamento refrigerado até a entrega
-          dos produtos aos nossos parceiros comerciais.
-        </p>
+            <span>Pedido</span>
+            <span class="carrinho-contador">0</span>
+          </button>
 
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-expanded="false"
+            aria-controls="nav-principal"
+            aria-label="Abrir menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-    </section>
+    </header>
 
+    <!-- ===================== CONTEÚDO ===================== -->
 
-    <!-- ===================== GALERIA ===================== -->
+    <main id="conteudo">
+      <!-- HERO DA GALERIA -->
 
-    <section class="secao">
+      <section class="hero">
+        <div class="container">
+          <p class="migalhas">
+            <a href="index.html">Início</a>
+            &rsaquo; Galeria
+          </p>
+
+          <h1>Galeria</h1>
+
+          <p class="hero-texto">
+            Conheça um pouco da estrutura da GR Alimentos, desde o armazenamento
+            refrigerado até a entrega dos produtos aos nossos parceiros
+            comerciais.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================== GALERIA ===================== -->
+
+      <section class="secao">
+        <div class="container">
+          <div class="secao-cabecalho secao-cabecalho-centro">
+            <span class="olho">Nossa estrutura</span>
+
+            <h2>GR Alimentos em imagens</h2>
+
+            <p>
+              Veja alguns dos processos que fazem parte do nosso trabalho de
+              distribuição em Bauru e região.
+            </p>
+          </div>
+
+          <div class="galeria grade grade-4">
+            <!-- FOTO 1 -->
+
+            <figure>
+              <img
+                src="IMG/galeria/entrega.svg"
+                alt="Veículo utilizado nas entregas da GR Alimentos"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+
+              <figcaption>
+                <strong>Frota de entrega</strong>
+                Rotas organizadas para atender Bauru e municípios da região.
+              </figcaption>
+            </figure>
+
+            <!-- FOTO 2 -->
+
+            <figure>
+              <img
+                src="IMG/galeria/camara-fria.svg"
+                alt="Estrutura refrigerada para armazenamento dos produtos"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+
+              <figcaption>
+                <strong>Cadeia de frio</strong>
+                Armazenamento refrigerado para preservar a qualidade dos
+                produtos.
+              </figcaption>
+            </figure>
+
+            <!-- FOTO 3 -->
+
+            <figure>
+              <img
+                src="IMG/galeria/estoque.svg"
+                alt="Estoque de produtos distribuídos pela GR Alimentos"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+
+              <figcaption>
+                <strong>Estoque e pronta entrega</strong>
+                Organização e agilidade para que os produtos cheguem frescos ao
+                comércio.
+              </figcaption>
+            </figure>
+
+            <!-- FOTO 4 -->
+
+            <figure>
+              <img
+                src="IMG/galeria/pontos-de-venda.svg"
+                alt="Ponto de venda atendido pela GR Alimentos"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+
+              <figcaption>
+                <strong>Parceiros comerciais</strong>
+                Atendimento a mercearias, padarias e varejistas da região.
+              </figcaption>
+            </figure>
+
+            <!-- FOTO 5 -->
+
+            <figure>
+              <img
+                src="IMG/galeria/equipe.svg"
+                alt="Equipe responsável pelo atendimento aos clientes"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+
+              <figcaption>
+                <strong>Atendimento próximo</strong>
+                Contato direto para acompanhar as necessidades de cada ponto de
+                venda.
+              </figcaption>
+            </figure>
+
+            <!-- FOTO 6 -->
+
+            <figure>
+              <img
+                src="IMG/galeria/pronta-entrega.svg"
+                alt="Representação do processo de pedido e pronta entrega"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+
+              <figcaption>
+                <strong>Pedido rápido</strong>
+                Facilidade para realizar pedidos e receber na próxima rota
+                disponível.
+              </figcaption>
+            </figure>
+          </div>
+
+          <!-- ===================== CHAMADA FINAL ===================== -->
+
+          <div class="faixa-cta" style="margin-top: 3rem">
+            <h2>Quer conhecer melhor a GR Alimentos?</h2>
+
+            <p>
+              Entre em contato e saiba mais sobre nossos produtos, entregas e
+              atendimento na região.
+            </p>
+
+            <div class="faixa-cta-acoes">
+              <a class="btn btn-primario" href="contato.html"> Fale conosco </a>
+
+              <a class="btn btn-claro" href="catalogo.html">
+                Conhecer o catálogo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+
+    <footer class="rodape">
       <div class="container">
+        <div class="rodape-grade">
+          <div>
+            <div class="rodape-logo">
+              <img
+                src="IMG/logo gr.png"
+                alt="GR Alimentos"
+                width="52"
+                height="61"
+              />
 
-        <div class="secao-cabecalho secao-cabecalho-centro">
-          <span class="olho">Nossa estrutura</span>
+              <strong>GR Alimentos</strong>
+            </div>
 
-          <h2>GR Alimentos em imagens</h2>
-
-          <p>
-            Veja alguns dos processos que fazem parte do nosso
-            trabalho de distribuição em Bauru e região.
-          </p>
-        </div>
-
-
-        <div class="galeria grade grade-4">
-
-          <!-- FOTO 1 -->
-
-          <figure>
-            <img
-              src="IMG/galeria/entrega.svg"
-              alt="Veículo utilizado nas entregas da GR Alimentos"
-              width="800"
-              height="600"
-              loading="lazy"
-            >
-
-            <figcaption>
-              <strong>Frota de entrega</strong>
-              Rotas organizadas para atender Bauru e municípios da região.
-            </figcaption>
-          </figure>
-
-
-          <!-- FOTO 2 -->
-
-          <figure>
-            <img
-              src="IMG/galeria/camara-fria.svg"
-              alt="Estrutura refrigerada para armazenamento dos produtos"
-              width="800"
-              height="600"
-              loading="lazy"
-            >
-
-            <figcaption>
-              <strong>Cadeia de frio</strong>
-              Armazenamento refrigerado para preservar a qualidade dos produtos.
-            </figcaption>
-          </figure>
-
-
-          <!-- FOTO 3 -->
-
-          <figure>
-            <img
-              src="IMG/galeria/estoque.svg"
-              alt="Estoque de produtos distribuídos pela GR Alimentos"
-              width="800"
-              height="600"
-              loading="lazy"
-            >
-
-            <figcaption>
-              <strong>Estoque e pronta entrega</strong>
-              Organização e agilidade para que os produtos cheguem frescos ao comércio.
-            </figcaption>
-          </figure>
-
-
-          <!-- FOTO 4 -->
-
-          <figure>
-            <img
-              src="IMG/galeria/pontos-de-venda.svg"
-              alt="Ponto de venda atendido pela GR Alimentos"
-              width="800"
-              height="600"
-              loading="lazy"
-            >
-
-            <figcaption>
-              <strong>Parceiros comerciais</strong>
-              Atendimento a mercearias, padarias e varejistas da região.
-            </figcaption>
-          </figure>
-
-
-          <!-- FOTO 5 -->
-
-          <figure>
-            <img
-              src="IMG/galeria/equipe.svg"
-              alt="Equipe responsável pelo atendimento aos clientes"
-              width="800"
-              height="600"
-              loading="lazy"
-            >
-
-            <figcaption>
-              <strong>Atendimento próximo</strong>
-              Contato direto para acompanhar as necessidades de cada ponto de venda.
-            </figcaption>
-          </figure>
-
-
-          <!-- FOTO 6 -->
-
-          <figure>
-            <img
-              src="IMG/galeria/pronta-entrega.svg"
-              alt="Representação do processo de pedido e pronta entrega"
-              width="800"
-              height="600"
-              loading="lazy"
-            >
-
-            <figcaption>
-              <strong>Pedido rápido</strong>
-              Facilidade para realizar pedidos e receber na próxima rota disponível.
-            </figcaption>
-          </figure>
-
-        </div>
-
-
-        <!-- ===================== CHAMADA FINAL ===================== -->
-
-        <div class="faixa-cta" style="margin-top:3rem">
-
-          <h2>Quer conhecer melhor a GR Alimentos?</h2>
-
-          <p>
-            Entre em contato e saiba mais sobre nossos produtos,
-            entregas e atendimento na região.
-          </p>
-
-          <div class="faixa-cta-acoes">
-
-            <a
-              class="btn btn-primario"
-              href="contato.html"
-            >
-              Fale conosco
-            </a>
-
-            <a
-              class="btn btn-claro"
-              href="catalogo.html"
-            >
-              Conhecer o catálogo
-            </a>
-
+            <p class="rodape-sobre">
+              Distribuição e comercialização de laticínios da marca Iogurtes
+              Carolina para comerciantes, mercearias e varejistas de Bauru e
+              região.
+            </p>
           </div>
 
-        </div>
+          <div>
+            <h3>Navegação</h3>
 
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- ===================== RODAPÉ ===================== -->
-
-  <footer class="rodape">
-    <div class="container">
-
-      <div class="rodape-grade">
-
-        <div>
-
-          <div class="rodape-logo">
-
-            <img
-              src="IMG/logo gr.png"
-              alt="GR Alimentos"
-              width="52"
-              height="61"
-            >
-
-            <strong>GR Alimentos</strong>
-
+            <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="institucional.html">A empresa</a></li>
+              <li><a href="catalogo.html">Catálogo</a></li>
+              <li><a href="galeria.html">Galeria</a></li>
+              <li><a href="contato.html">Contato</a></li>
+            </ul>
           </div>
 
-          <p class="rodape-sobre">
-            Distribuição e comercialização de laticínios da marca
-            Iogurtes Carolina para comerciantes, mercearias e
-            varejistas de Bauru e região.
-          </p>
+          <div>
+            <h3>Produtos</h3>
 
+            <ul>
+              <li>
+                <a href="catalogo.html?categoria=iogurtes"> Iogurtes </a>
+              </li>
+
+              <li>
+                <a href="catalogo.html?categoria=requeijao"> Requeijão </a>
+              </li>
+
+              <li>
+                <a href="catalogo.html?categoria=leite-fermentado">
+                  Leite fermentado
+                </a>
+              </li>
+
+              <li>
+                <a href="catalogo.html?categoria=bebida-lactea">
+                  Bebidas lácteas
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
 
+        <div class="rodape-base">
+          <span> GR Alimentos — Todos os direitos reservados. </span>
 
-        <div>
-
-          <h3>Navegação</h3>
-
-          <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="institucional.html">A empresa</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-
+          <span> Projeto Desenvolvimento Web — UNISAGRADO </span>
         </div>
-
-
-        <div>
-
-          <h3>Produtos</h3>
-
-          <ul>
-            <li>
-              <a href="catalogo.html?categoria=iogurtes">
-                Iogurtes
-              </a>
-            </li>
-
-            <li>
-              <a href="catalogo.html?categoria=requeijao">
-                Requeijão
-              </a>
-            </li>
-
-            <li>
-              <a href="catalogo.html?categoria=leite-fermentado">
-                Leite fermentado
-              </a>
-            </li>
-
-            <li>
-              <a href="catalogo.html?categoria=bebida-lactea">
-                Bebidas lácteas
-              </a>
-            </li>
-          </ul>
-
-        </div>
-
       </div>
-
-
-      <div class="rodape-base">
-
-        <span>
-          GR Alimentos — Todos os direitos reservados.
-        </span>
-
-        <span>
-          Projeto Desenvolvimento Web — UNISAGRADO
-        </span>
-
-      </div>
-
-    </div>
-  </footer>
-
-</body>
-
+    </footer>
+  </body>
 </html>
