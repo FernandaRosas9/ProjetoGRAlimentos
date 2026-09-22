@@ -1,0 +1,35 @@
+document.addEventListener("DOMContentLoaded", () => {
+  // Menu Mobile
+  const btnMenuMobile = document.getElementById("btn-menu-mobile");
+  const navMenu = document.getElementById("nav-menu");
+
+  if (btnMenuMobile && navMenu) {
+    btnMenuMobile.addEventListener("click", () => {
+      navMenu.classList.toggle("ativo");
+    });
+  }
+
+  // Scroll Suave
+  const linksAncora = document.querySelectorAll('a[href^="#"]');
+  linksAncora.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const idAlvo = this.getAttribute("href");
+      const elementoAlvo = document.querySelector(idAlvo);
+      
+      if (elementoAlvo) {
+        elementoAlvo.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+
+  // Atualizar contador do carrinho
+  const carrinho = JSON.parse(localStorage.getItem("carrinhoGR")) || [];
+  const contador = document.getElementById("contador-carrinho");
+  if (contador) {
+    contador.innerText = carrinho.length;
+  }
+});
