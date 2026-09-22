@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Menu Mobile
   const btnMenuMobile = document.getElementById("btn-menu-mobile");
   const navMenu = document.getElementById("nav-menu");
 
@@ -9,7 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Scroll Suave
   const linksAncora = document.querySelectorAll('a[href^="#"]');
   linksAncora.forEach(link => {
     link.addEventListener("click", function(e) {
@@ -26,7 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Atualizar contador do carrinho
   const carrinho = JSON.parse(localStorage.getItem("carrinhoGR")) || [];
   const contador = document.getElementById("contador-carrinho");
   if (contador) {
